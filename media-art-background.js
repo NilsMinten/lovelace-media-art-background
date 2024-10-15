@@ -13,7 +13,7 @@ function setupStyle(lovelace, bgroundElem) {
   bgroundElem.style.maxWidth = "100vw";
   bgroundElem.style.maxHeight = "100vh";
   bgroundElem.style.opacity = 0;
-  bgroundElem.style.transition = "opacity " + transitionOpacity;
+  bgroundElem.style.transition = "background-image " + transitionOpacity + " ease-in-out";
 
   bgroundElem.style.backgroundRepeat = 'no-repeat';
   bgroundElem.style.backgroundPosition = 'center';
