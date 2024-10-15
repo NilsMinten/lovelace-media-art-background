@@ -85,10 +85,10 @@ const appLayout = root.shadowRoot;
 const lovelace = root.lovelace;
 
 // create container element, set style and append to container
-const bgroundElem = document.createElement("div"); // create empty container for background 
+const bgroundElem = root.shadowRoot.querySelector('#view');
 setupStyle(lovelace, bgroundElem);
-appLayout.appendChild(bgroundElem);
-//appLayout.shadowRoot.querySelector("#contentContainer").style.transform = "none";
+// appLayout.appendChild(bgroundElem);
+// appLayout.shadowRoot.querySelector("#contentContainer").style.transform = "none";
 
 setInterval(function () { setBackground(root, appLayout, lovelace, bgroundElem) }, 5000);
 setBackground(root, appLayout, lovelace, bgroundElem);
