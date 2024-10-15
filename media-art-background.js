@@ -11,7 +11,7 @@ function setupStyle(lovelace, bgroundElem) {
   bgroundElem.style.backgroundPosition = 'center';
   bgroundElem.style.backgroundSize = 'cover';
   bgroundElem.style.filter = `blur(${filterBlur})`;
-  bgroundElem.style.backgroundColor: rgba(255,255,255,transitionOpacity);
+  //bgroundElem.style.backgroundColor: rgba(255,255,255,transitionOpacity);
   bgroundElem.style.backgroundBlendMode: lighten;
 
   //bgroundElem.style.zIndex = -1; // below view elements
