@@ -87,7 +87,7 @@ const lovelace = root.lovelace;
 const bgroundElem = document.createElement('div');
 setupStyle(lovelace, bgroundElem);
 appLayout.appendChild(bgroundElem);
-appLayout.querySelector('#view').styles.background = "transparent";
+appLayout.querySelector('#view').style.background = "transparent";
 // appLayout.shadowRoot.querySelector("#contentContainer").style.transform = "none";
 
 setInterval(function () { setBackground(root, appLayout, lovelace, bgroundElem) }, 5000);
