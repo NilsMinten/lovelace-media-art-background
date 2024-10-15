@@ -6,13 +6,19 @@ function setupStyle(lovelace, bgroundElem) {
 
   // apply style to background element
   bgroundElem.style.position = "fixed"; // fill entire window
+  bgroundElem.style.top = 0;
+  bgroundElem.style.left = 0;
+  bgroundElem.style.width = "100%";
+  bgroundElem.style.height = "100%";
+  bgroundElem.style.maxWidth = "100vw";
+  bgroundElem.style.maxHeight = "100vh";
+  bgroundElem.style.opacity = 0;
+  bgroundElem.style.transition = "opacity " + transitionOpacity;
 
   bgroundElem.style.backgroundRepeat = 'no-repeat';
   bgroundElem.style.backgroundPosition = 'center';
   bgroundElem.style.backgroundSize = 'cover';
   bgroundElem.style.filter = `blur(${filterBlur})`;
-  //bgroundElem.style.backgroundColor: rgba(255,255,255,transitionOpacity);
-  bgroundElem.style.backgroundBlendMode: lighten;
 
   //bgroundElem.style.zIndex = -1; // below view elements
 }
