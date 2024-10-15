@@ -40,7 +40,7 @@ Here is another example showing all the different settings:
 media_art_background:
   blur: 10px
   opacity: 0.5
-  transition_opacity: 2s
+  background_transition: 2s
   entities:
     - media_player.main
     - entity: media_player.secondary
